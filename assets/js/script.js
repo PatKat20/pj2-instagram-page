@@ -35,7 +35,9 @@ const generatePostsHTML = posts => {
                     <img src="${randomUser.userAvatar}" style="width:32px;"></img>
                     <p>${randomUser.user}</p>
                 </div>
-                <img src="/assets/img/dots.svg" style="width:20px; margin-right:18px;"></img>
+                <a href="">
+                    <ion-icon name="ellipsis-horizontal-outline" style="width:20px; margin-right:18px; margin-top:15px; color: black;"></ion-icon>
+                </a>
             </header>
             <div class="post-img">
             <picture>
