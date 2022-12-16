@@ -109,7 +109,7 @@ a {
     background-color: #ffffff;
     border: 1px solid #dbdbdb;
     display: flex;
-    overflow-x: hidden;
+    overflow: hidden;
     z-index:-1; 
 }
 
