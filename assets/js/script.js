@@ -69,7 +69,7 @@ const generatePostsHTML = posts => {
                 <div class="comment-area">
                     <img src="${randomUser.userAvatar}" style="width:20px;"></img> 
                     <span> 
-                        Curtido por <b>${randomUser.user}</b> e <strong> outras ${Math.round(Math.random() * 100000).toLocaleString('pt-BR')}</strong>
+                        Curtido por <b>${randomUser.user}</b> e <strong> outras ${Math.round(Math.random() * 100000).toLocaleString('pt-BR')} pessoas</strong>
                     </span>
                 </div>
             </footer>
