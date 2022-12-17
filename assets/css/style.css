@@ -60,7 +60,7 @@ a {
     width: 215px;
     height: 28px;
     border-radius: 3px;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 400;
 }
 
@@ -68,11 +68,11 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap:20px;
 }
 
 .h-icons-list a {
-    font-size: 22px;
+    font-size: 1.375rem;
     color: #000000;
 }
 
@@ -120,7 +120,7 @@ a {
 }
 
 .story p{
-    font-size:12px;
+    font-size:0.75rem;
     color:#262626;
     text-align: center;
 }
@@ -165,7 +165,7 @@ a {
 
 .s-userinfo {
     line-height: .3;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .s-userinfo p:first-child {
@@ -188,7 +188,7 @@ a {
 
 .suggestions-li {
     display: flex;
-    font-size: 14px;
+    font-size: 0.875rem;
     justify-content: space-between;
     align-items: center;
 }
@@ -196,13 +196,13 @@ a {
 .suggestions-li>p {
     margin-right: 120px;
     color: #8E8E8E;
-    font-size:12px;
+    font-size:0.75rem;
 }
 
 .suggestions-li>p+a {
     color: #262626;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 0.75rem;
     width: 50px;
 }
 
@@ -216,13 +216,13 @@ a {
 }
 
 .suggestion-userinfo p:last-child {
-    font-size: 11px;
+    font-size: 0.6875rem;
     color: #8E8E8E;
 }
 
 .s-follow {
     color: #139EF2;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 500;
 }
 
@@ -257,7 +257,7 @@ a {
 .comment-area {
     display: flex;
     align-items: center;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .comment-area img {
