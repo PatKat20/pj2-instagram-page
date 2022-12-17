@@ -4,9 +4,7 @@
 
 ## Descrição do Projeto
 
-```
 <p align="center">O desafio do projeto foi de replicar a página principal do instagram utilizando apenas tecnologias de front-end com layout responsivo.</p>
-```
 
 <hr>
 
