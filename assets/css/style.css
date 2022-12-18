@@ -38,6 +38,10 @@ a {
     overflow-x:hidden;
 }
 
+#menu-bottom{
+    display:none;
+}
+
 /* Header Area*/
 
 #header {
@@ -304,6 +308,14 @@ a {
 @media screen and (max-width:614px) {
     #header{
         margin-bottom:-17px;
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+    }
+
+    #main{
+        margin-top:9vh;
     }
 
     #h-input, .hide-on-mobile {
@@ -357,6 +369,29 @@ a {
     #story-button img {
         display: none;
         visibility: hidden;
+    }
+
+    #menu-bottom{
+        display:block;
+        position:fixed;
+        bottom:0;
+        left:0;
+        width:100vw;
+        background-color:white;
+    }
+
+    .menu-items{
+        display:flex;
+        justify-content: space-between;
+        padding:0 20px;
+    }
+
+    .menu-items a {
+        color:black;
+    }
+
+    .menu-icon{
+        font-size:1.25rem;
     }
 
 

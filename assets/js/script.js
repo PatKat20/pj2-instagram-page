@@ -7,8 +7,8 @@ const usersData = [
     { userAvatar: "assets/img/stories/4.png", user: "nathanwpyle...", post: "viagem" },
     { userAvatar: "assets/img/stories/5.png", user: "wawawiwac...", post: "apartamento" },
     { userAvatar: "assets/img/stories/6.png", user: "respondeai", post: "math" },
-    { userAvatar: "assets/img/stories/7.png", user: "filomoderna", post: "gato" },
-    { userAvatar: "assets/img/stories/8.png", user: "memeriago.", post: "show" },
+    { userAvatar: "assets/img/stories/7.png", user: "filomoderna", post: "filosofia" },
+    { userAvatar: "assets/img/stories/8.png", user: "memeriago.", post: "meme" },
 ]
 
 const generateStoriesHTML = stories => {
@@ -24,9 +24,10 @@ const generateStoriesHTML = stories => {
 }
 
 const generatePostsHTML = posts => {
-    return posts.reduce((accumulator,) => {
+    return posts.reduce((accumulator, _) => {
         let randomNumber = Math.round(Math.random() * 7)
         let randomUser = usersData[randomNumber]
+        let randomPost = apiUnsplash(usersData[randomNumber].post, "614x614")
 
         return accumulator += `
         <article class="posts">
@@ -41,7 +42,7 @@ const generatePostsHTML = posts => {
             </header>
             <div class="post-img">
             <picture>
-                <img src="${apiUnsplash(randomUser.post, "614x614")}"></img>
+                <img src="${randomPost}"></img>
             </picture>      
             </div>
 
