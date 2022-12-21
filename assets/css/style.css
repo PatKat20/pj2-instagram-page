@@ -230,6 +230,13 @@ a {
     font-weight: 500;
 }
 
+.suggestion-about,
+.copywrite{
+    font-size:11px;
+    color:#C7C7C7;
+    font-weight: 400;
+}
+
 
 /* Posts Area */
 
