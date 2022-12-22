@@ -99,3 +99,38 @@ const postsInBox = generatePostsHTML(usersData)
 
 insertStories(storiesInBox);
 insertPosts(postsInBox)
+
+// Scroll Dos Stories
+const setaStoryDireita = document.getElementById("seta-story");
+const setaStoryEsquerda = document.getElementById("seta-story-return");
+const storiesUL = document.querySelector("#stories-ul");
+
+storiesUL.addEventListener("scroll", e=>{
+    if (storiesUL.scrollLeft == 372) {
+        setaStoryDireita.style.display = "none";
+        setaStoryEsquerda.style.display= "inline-block"
+    } else if(storiesUL.scrollLeft > 0 && storiesUL.scrollLeft < 372){
+        setaStoryDireita.style.display = "inline-block";
+        setaStoryEsquerda.style.display = "inline-block";
+    }else if(storiesUL.scrollLeft === 0){
+        setaStoryDireita.style.display = "inline-block";
+        setaStoryEsquerda.style.display = "none"
+    } 
+
+})
+
+setaStoryDireita.addEventListener("click", e =>{
+    storiesUL.scroll({
+        left: 400,
+        behavior: 'smooth'
+      });
+      console.log(storiesUL.scrollLeft)
+})
+
+setaStoryEsquerda.addEventListener("click", e =>{
+    storiesUL.scroll({
+        left: -400,
+        behavior: 'smooth'
+      });
+      console.log(storiesUL.scrollLeft)
+})

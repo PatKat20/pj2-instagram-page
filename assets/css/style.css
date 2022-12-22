@@ -172,6 +172,19 @@ a {
     z-index: 2;
 }
 
+#seta-story-return{
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.219);
+    border-radius: 50%;
+    width: 20px;
+    position: absolute;
+    top: 43px;
+    left: 10px;
+    z-index: 2;
+    color:white;
+    font-size:24px;
+    display:none;
+}
+
 /* Suggestions Area */
 
 .s-userinfo-area {
@@ -397,7 +410,7 @@ a {
         background-color:#FAFAFA;
     }
 
-    #story-button img {
+    .story-button img {
         display: none;
         visibility: hidden;
     }
