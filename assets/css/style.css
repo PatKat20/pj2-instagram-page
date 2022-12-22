@@ -39,7 +39,7 @@ a {
 }
 
 .header-container{
-    width:935px;
+    max-width:935px;
     margin:auto;
     display: flex;
     justify-content: space-between;
