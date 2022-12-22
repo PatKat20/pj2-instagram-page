@@ -108,37 +108,47 @@ a {
 #stories-ul {
     width: 614px;
     height: 118px;
-    padding-left: 16px;
+    padding-left:2px;
     border-radius: 3px;
     background-color: #ffffff;
     border: 1px solid #dbdbdb;
     display: flex;
-    overflow: hidden;
+    overflow-y: hidden;
     white-space: nowrap;
     text-overflow: clip;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
     z-index: -1;
 }
 
+#stories-ul::-webkit-scrollbar{
+    display:none;
+}
+
+
 .story {
-    margin: 16px 5px;
-    width: 66px;
+    margin: 16px 2px;
+    width: 78px;
     position: relative;
     border-radius:50%;
+    text-align:center;
 }
 
 .story p {
     font-size: 0.75rem;
     color: #262626;
     text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .story:last-child {
-    margin-right: -74px;
+    margin-right: -104px;
 }
 
 .story-img {
     margin: 0 6px;
-    width: 66px;
+    min-width: 66px;
     height: 66px;
     display: block;
     border-radius:50%;
@@ -148,6 +158,8 @@ a {
     position: absolute;
     top: 5px;
     left: 11px;
+    border-radius:50%;
+    width:56px;
 }
 
 #seta-story {
@@ -188,6 +200,9 @@ a {
 #suggest-content {
     margin-left: 29px;
     margin-top: 57px;
+    position:sticky;
+    top:0;
+    left:0;
 }
 
 .suggestions-list {
@@ -262,6 +277,7 @@ a {
 
 .user-info img {
     margin-right: 15px;
+    border-radius:50%;
 }
 
 .header-post {
@@ -277,6 +293,7 @@ a {
 
 .comment-area img {
     margin: 14px 5px 14px 17px;
+    border-radius:50%;
 }
 
 .shared-icons a {
